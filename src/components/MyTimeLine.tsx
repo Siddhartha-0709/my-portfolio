@@ -50,7 +50,7 @@ export function MyTimeLine() {
       ),
     },
     {
-      title: "2022",
+      title: "Late 2022",
       content: (
         <div>
           <p className="text-2xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-lime-400 to-green-600">
@@ -72,7 +72,7 @@ export function MyTimeLine() {
       ),
     },
     {
-      title: "2022",
+      title: "Early 2022",
       content: (
         <div>
           <p className="text-2xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-lime-400 to-green-600">

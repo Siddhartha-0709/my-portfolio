@@ -2,11 +2,10 @@
 import React from "react";
 import Image from "next/image";
 import profileImage from "../app/assets/profile.png";
-import { TextGenerateEffect } from "./ui/text-generate-effect";
 import { BackgroundGradient } from "./ui/background-gradient";
 import { Button } from "./ui/button";
 
-import {FaGithub,  FaReact } from "react-icons/fa";
+import { FaGithub, FaGraduationCap, FaReact, FaUniversity } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa6";
 import { SiExpress } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
@@ -19,13 +18,11 @@ import { StarsBackground } from "./ui/stars-background";
 import { ShootingStars } from "./ui/shooting-stars";
 
 export function HomeHero() {
-    const words = `Siddhartha Mukherjee`
     return (
-        <>  
-            <div className="h-[38rem] relative w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
-            <ShootingStars/>
-            <StarsBackground/>
-                <TextGenerateEffect className="absolute top-10 left-10" words={words} />
+        <>
+            <div className="h-[49rem] relative w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
+                <ShootingStars />
+                <StarsBackground />
                 <div className="w-full absolute inset-0 h-screen">
                 </div>
                 <br />
@@ -33,7 +30,7 @@ export function HomeHero() {
                 <br />
                 <br />
                 <br />
-                <BackgroundGradient className="rounded-[22px] p-8 dark:bg-zinc-900" 
+                <BackgroundGradient className="rounded-[22px] p-8 dark:bg-zinc-900 max-w-4xl"
                 >
                     <div className="flex items-center justify-between">
                         <div>
@@ -41,7 +38,8 @@ export function HomeHero() {
                                 Siddhartha Mukherjee
                             </h1>
                             <p className="text-gray-400 text-md mt-1">Software Engineer | Architecting the World with Lines of Code</p>
-                            <p className="text-gray-400 text-sm mt-8">
+                            <p className='text-gray-400 text-sm mt-2'>A passionate developer and tech enthusiast who loves turning ideas into impactful solutions. From designing seamless user experiences to deploying robust applications, I enjoy exploring the endless possibilities of technology.</p>
+                            <p className="text-gray-400 text-sm mt-2 ">
                                 <FaMapMarkerAlt size={18} className="inline-block mr-1" color="red" />
                                 Kolkata, India
                             </p>
@@ -51,6 +49,28 @@ export function HomeHero() {
                             className="rounded-full w-32 h-32 ml-10"
                             alt="profile"
                         />
+                    </div>
+                    <div>
+                        <h1 className="text-2xl font-bold mt-4">Education</h1>
+                        <div>
+                            <p className="text-gray-400 text-sm mt-2">
+                                <FaGraduationCap size={18} className="inline-block mr-1" color="red" />
+                                B. Tech, Computer Science and Engineering
+                            </p>
+                            <p className="text-gray-400 text-sm mt-1">
+                                <FaUniversity size={18} className="inline-block mr-1" color="red" />
+                                Kalinga Institute of Industrial Technology, Bhubaneswar
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 className="text-2xl font-bold mt-4">Experiences</h1>
+                        <div>
+                            <p className="text-gray-400 text-sm mt-2">
+                                <FaNodeJs size={18} className="inline-block mr-1" color="green" />
+                                Node JS Developer, Internship | Celebal Technologies
+                            </p>
+                        </div>
                     </div>
                     <div>
                         <h1 className="text-2xl font-bold mt-4">Skills and Interests</h1>

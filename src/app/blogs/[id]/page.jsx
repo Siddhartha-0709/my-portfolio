@@ -4,7 +4,6 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { useParams } from 'next/navigation'
 import hljs from 'highlight.js'
-import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Skeleton } from '@/components/ui/skeleton'
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
@@ -49,7 +48,6 @@ export default function BlogPage() {
 
   return (
     <>
-      <TextGenerateEffect className="absolute top-10 left-10" words={"Siddhartha Mukherjee"} />
       <div
         className=" bg-black w-full container mx-auto md:pt-36 pt-28 px-1"
         dangerouslySetInnerHTML={{ __html: blog?.content }}
@@ -61,7 +59,6 @@ export default function BlogPage() {
 function BlogSkeleton() {
   return (
     <div className="container mx-auto py-8 px-4 h-screen pt-36 bg-black w-full">
-      <TextGenerateEffect className="absolute top-10 left-10" words={"Siddhartha Mukherjee"} />
       <Card className="max-w-5xl mx-auto bg-black">
         <CardHeader>
           <Skeleton className="h-8 w-3/4 mb-2" />

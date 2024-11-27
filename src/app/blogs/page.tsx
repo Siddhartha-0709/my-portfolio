@@ -9,7 +9,6 @@ import { AspectRatio } from "@/components/ui/aspect-ratio"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Skeleton } from "@/components/ui/skeleton"
-import { TextGenerateEffect } from "@/components/ui/text-generate-effect"
 import { StarsBackground } from "@/components/ui/stars-background"
 import { ShootingStars } from "@/components/ui/shooting-stars"
 interface Blog {
@@ -53,7 +52,6 @@ export default function BlogListing() {
         </div>
         {/* Foreground content */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 pt-36 md:p-28 md:pt-36 relative z-20">
-          <TextGenerateEffect className="absolute top-10 left-10" words={"Siddhartha Mukherjee"} />
           {blogs.map((blog, index) => (
             <BlogCard key={blog._id} blog={blog} index={index} />
           ))}
@@ -106,7 +104,6 @@ function BlogListingSkeleton() {
         <ShootingStars />
       </div>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 pt-36 p-28 relative z-20">
-        <TextGenerateEffect className="absolute top-10 left-10" words={"Siddhartha Mukherjee"} />
         {[...Array(6)].map((_, i) => (
           <Card key={i} className="overflow-hidden flex flex-col justify-between h-full bg-black">
             <div>
