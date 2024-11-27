@@ -19,7 +19,7 @@ export function MyTimeLine() {
           ✅ Secured internship at an MNC as an analyst.
           </p>
           <p className="text-lg flex gap-2 items-center text-neutral-700 dark:text-neutral-300">
-          ✅ Started my YouTube channel <span className="text-lime-400">Siddharthadotcom</span> a place for tech videos
+          ✅ Started my YouTube channel a place for tech videos
           </p>
           <p className="text-lg flex gap-2 items-center text-neutral-700 dark:text-neutral-300">
           ✅ Still the year has not yet ended 😜 . . . 
@@ -157,7 +157,7 @@ export function MyTimeLine() {
         <h2 className="relative flex-col md:flex-row z-10 text-2xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8 mt-32">
           Changelog from my Journey and Updates
         </h2>
-        <h4 className="relative flex-col md:flex-row z-10 text-xl md:text-xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8 mt-4">Glance through a list of the projects which I have built over the past few years.</h4>
+        <h4 className="relative flex-col md:flex-row z-10 text-xl md:text-xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8 mt-4">This is the list of updates which I have made over the past few years.</h4>
       <Timeline data={data} />    
       </div>
       <ShootingStars/>

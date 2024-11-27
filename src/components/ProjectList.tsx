@@ -6,7 +6,7 @@ import { StarsBackground } from "./ui/stars-background";
 export default function ProjectList() {
   return (
     <>
-    <div className="h-[40rem] max-w-5xl mx-auto px-8">
+    <div className="md:h-[40rem] max-w-5xl mx-auto px-8">
         <HoverEffect items={projects} />
         <ShootingStars/>
         <StarsBackground/>

@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/lib/dbConnect.js", "src/app/blogs/page.tsx", "src/app/api/view-blog/route.ts", "src/app/blogs/[id]/page.jsx"],
   "exclude": ["node_modules"]
 }
