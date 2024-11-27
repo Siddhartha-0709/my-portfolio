@@ -4,8 +4,8 @@ import Image from "next/image";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "../components/ui/3d-card";
 import Link from "next/link";
-import ytBanner from "../app/assets/yt-banner.jpg"
-import blogBanner from "../app/assets/blogbanner.png"
+import ytBanner from "../app/assets/youtube.png"
+import blogBanner from "../app/assets/blog.png"
 import { AspectRatio } from "@radix-ui/react-aspect-ratio";
 import { StarsBackground } from "./ui/stars-background";
 import { ShootingStars } from "./ui/shooting-stars";
