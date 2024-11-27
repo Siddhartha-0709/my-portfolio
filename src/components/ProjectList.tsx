@@ -9,6 +9,8 @@ export default function ProjectList() {
     <div className="md:h-[40rem] max-w-5xl mx-auto px-8">
         <HoverEffect items={projects} />
         <ShootingStars/>
+        <ShootingStars/>
+        <StarsBackground/>
         <StarsBackground/>
     </div>
     </>

@@ -161,6 +161,8 @@ export function MyTimeLine() {
       <Timeline data={data} />    
       </div>
       <ShootingStars/>
+      <ShootingStars/>
+      <StarsBackground/>
       <StarsBackground/>
     </>
 
