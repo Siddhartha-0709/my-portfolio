@@ -63,7 +63,7 @@ export default function Navbar({ className }: { className?: string }) {
 
 
       {/* Mobile Menu */}
-      <div className="md:hidden h-14 flex items-center justify-center bg-black p-1">
+      <div className="md:hidden h-14 flex items-center justify-center bg-black p-1 border-b-2 border-white">
         <TextGenerateEffect className="absolute left-0 bg-black" words={'Siddhartha Mukherjee'} />
         <Sheet>
           <SheetTrigger asChild>

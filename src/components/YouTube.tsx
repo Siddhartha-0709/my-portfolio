@@ -18,7 +18,7 @@ export function YouTube() {
                 <StarsBackground />
                 <ShootingStars />
                 <ShootingStars />
-                <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-1">
                     <Link href="https://www.youtube.com/@siddharthadotcom">
                         <CardContainer className="ml-auto">
                             <StarsBackground className="" />

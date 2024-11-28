@@ -20,7 +20,7 @@ import { ShootingStars } from "./ui/shooting-stars";
 export function HomeHero() {
     return (
         <>
-            <div className="h-[49rem] relative w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
+            <div className="md:h-[49rem] relative md:w-full md:mx-0 bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
                 <ShootingStars />
                 <StarsBackground />
                 <div className="w-full absolute inset-0 h-screen">
@@ -28,8 +28,7 @@ export function HomeHero() {
                 <br />
                 <br />
                 <br />
-                <br />
-                <br />
+                <br className="hidden md:block"/>
                 <BackgroundGradient className="rounded-[22px] p-8 dark:bg-zinc-900 max-w-4xl"
                 >
                     <div className="flex items-center justify-between">
