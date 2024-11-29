@@ -42,7 +42,7 @@ export default function ProjectList() {
           </div>
         ))}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 mb-32 mt-28 gap-32 md:gap-0">
+      <div className="grid grid-cols-1 md:grid-cols-3 pb-32 mt-28 gap-32 md:gap-0">
         {projects2.map((project) => (
           <div className="w-full flex items-center justify-center "
           key={project.title}
