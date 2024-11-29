@@ -6,23 +6,14 @@ import { CardBody, CardContainer, CardItem } from "../components/ui/3d-card";
 import Link from "next/link";
 import ytBanner from "../app/assets/youtube.png"
 import blogBanner from "../app/assets/blog.png"
-import { AspectRatio } from "@radix-ui/react-aspect-ratio";
-import { StarsBackground } from "./ui/stars-background";
-import { ShootingStars } from "./ui/shooting-stars";
 
 export function YouTube() {
     return (
         <>
             <div>
-                <StarsBackground />
-                <StarsBackground />
-                <ShootingStars />
-                <ShootingStars />
                 <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-1">
                     <Link href="https://www.youtube.com/@siddharthadotcom">
                         <CardContainer className="ml-auto">
-                            <StarsBackground className="" />
-                            <ShootingStars />
                             <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-[28rem] rounded-xl p-6 border  ">
                                 <CardItem
                                     translateZ="50"

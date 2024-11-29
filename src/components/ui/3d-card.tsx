@@ -9,8 +9,7 @@ import React, {
   useRef,
   useEffect,
 } from "react";
-import { ShootingStars } from "./shooting-stars";
-import { StarsBackground } from "./stars-background";
+
 
 const MouseEnterContext = createContext<
   [boolean, React.Dispatch<React.SetStateAction<boolean>>] | undefined
@@ -58,10 +57,6 @@ export const CardContainer = ({
           perspective: "1000px",
         }}
       >
-        <StarsBackground />
-        <StarsBackground />
-        <ShootingStars />
-        <ShootingStars />
         <div
           ref={containerRef}
           onMouseEnter={handleMouseEnter}

@@ -34,9 +34,10 @@ export default function Navbar({ className }: { className?: string }) {
     >
       <div className="items-center justify-between">
         <Link href="/">
-          <TextGenerateEffect className="hidden md:block absolute left-[1%] top-10" words={'Siddhartha'} />
+          <TextGenerateEffect className="hidden md:block absolute left-[1%] top-10" words={'Siddhartha'} size="text-2xl font-bold" />
         </Link>
-        <div className="hidden md:block absolute right-[2%] top-5">
+        <div className="hidden md:block absolute right-[2%] top-5"
+        >
           <Menu setActive={setActive}>
             {menuItems.map((item) => (
               <HoveredLink key={item.href} href={item.href}>
@@ -64,7 +65,7 @@ export default function Navbar({ className }: { className?: string }) {
 
       {/* Mobile Menu */}
       <div className="md:hidden h-14 flex items-center justify-center bg-black p-1 border-b-2 border-white">
-        <TextGenerateEffect className="absolute left-0 bg-black" words={'Siddhartha Mukherjee'} />
+        <TextGenerateEffect className="absolute left-0 bg-black" words={'Siddhartha Mukherjee'} size="text-2xl font-bold" />
         <Sheet>
           <SheetTrigger asChild>
             <Button variant="outline" size="icon" className="absolute right-2">

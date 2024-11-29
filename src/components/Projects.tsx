@@ -1,21 +1,49 @@
+// "use client";
+// import React from "react";
+// import { PinContainer } from "./ui/3d-pin";
+
+// export default function Projects() {
+//   return (
+// <div className="h-[40rem] w-full flex items-center justify-center ">
+//   <PinContainer
+//     title="/ui.aceternity.com"
+//     href="https://twitter.com/mannupaaji"
+//   >
+//     <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
+//       <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
+//         Aceternity UI
+//       </h3>
+//       <div className="text-base !m-0 !p-0 font-normal">
+//         <span className="text-slate-500 ">
+//           Customizable Tailwind CSS and Framer Motion Components.
+//         </span>
+//       </div>
+//       <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
+//     </div>
+//   </PinContainer>
+// </div>
+//   );
+// }
+
+
 "use client";
 import React from "react";
+import { Boxes } from "./ui/background-boxes";
+import { cn } from "@/lib/utils";
+import { PinContainer } from "./ui/3d-pin";
 import ProjectList from "./ProjectList";
-import { ShootingStars } from "./ui/shooting-stars";
-import { StarsBackground } from "./ui/stars-background";
+import { TextGenerateEffect } from "./ui/text-generate-effect";
+
 export default function Projects() {
-  const words = "Explore my Projects";
   return (
-    <>
-      <div className="rounded-md bg-black flex flex-col items-center justify-center relative w-full">
-      <ShootingStars/>
-      <StarsBackground/>
-        <h2 className="relative flex-col md:flex-row z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8 mt-32">
-          {words}
-        </h2>
-        <h4 className="relative flex-col md:flex-row z-10 text-xl md:text-2xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8 mt-4">Glance through a list of the projects which I have built over the past few years.</h4>
-        <ProjectList />
+    <div className="relative w-full overflow-hidden bg-gray-900 flex flex-col items-center justify-center rounded-lg ">
+      <div className="absolute inset-0 w-full h-full bg-black z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
+      <Boxes />
+      <div className="mt-32 mb-24">
+        <TextGenerateEffect words={'Explore My Projects'} size="text-4xl text-white relative z-20 text-center mb-2 font-bold"/>
+        <TextGenerateEffect words={'Here are the few of the various projects on which I have worked on!'} size="text-center text-xs md:text-xl text-slate-300 relative z-20"/>
       </div>
-    </>
+      <ProjectList/>
+    </div>
   );
 }

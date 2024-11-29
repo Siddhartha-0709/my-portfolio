@@ -1,129 +1,56 @@
 "use client";
+
+import { motion } from "framer-motion";
 import React from "react";
+import { AuroraBackground } from "../components/ui/aurora-background";
 import Image from "next/image";
-import profileImage from "../app/assets/profile.png";
-import { BackgroundGradient } from "./ui/background-gradient";
-import { Button } from "./ui/button";
-
-import { FaGithub, FaGraduationCap, FaReact, FaUniversity } from "react-icons/fa";
-import { FaNodeJs } from "react-icons/fa6";
-import { SiExpress } from "react-icons/si";
-import { SiMongodb } from "react-icons/si";
-import { FaDocker } from "react-icons/fa6";
-import { FaAws } from "react-icons/fa6";
-import { SiNextdotjs } from "react-icons/si";
-import { FaLinux } from "react-icons/fa";
-import { FaMapMarkerAlt } from "react-icons/fa";
-import { StarsBackground } from "./ui/stars-background";
-import { ShootingStars } from "./ui/shooting-stars";
-
+import profilePic from "../app/assets/profile.png";
 export function HomeHero() {
-    return (
-        <>
-            <div className="md:h-[49rem] relative md:w-full md:mx-0 bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
-                <ShootingStars />
-                <StarsBackground />
-                <div className="w-full absolute inset-0 h-screen">
-                </div>
-                <br />
-                <br />
-                <br />
-                <br className="hidden md:block"/>
-                <BackgroundGradient className="rounded-[22px] p-8 dark:bg-zinc-900 max-w-4xl"
-                >
-                    <div className="flex items-center justify-between">
-                        <div>
-                            <h1 className="text-4xl font-bold flex-1">
-                                Siddhartha Mukherjee
-                            </h1>
-                            <p className="text-gray-400 text-md mt-1">Software Engineer | Architecting the World with Lines of Code</p>
-                            <p className='text-gray-400 text-sm mt-2'>A passionate developer and tech enthusiast who loves turning ideas into impactful solutions. From designing seamless user experiences to deploying robust applications, I enjoy exploring the endless possibilities of technology.</p>
-                            <p className="text-gray-400 text-sm mt-2 ">
-                                <FaMapMarkerAlt size={18} className="inline-block mr-1" color="red" />
-                                Kolkata, India
-                            </p>
-                        </div>
-                        <Image
-                            src={profileImage}
-                            className="rounded-full w-32 h-32 ml-10"
-                            alt="profile"
-                        />
-                    </div>
-                    <div>
-                        <h1 className="text-2xl font-bold mt-4">Education</h1>
-                        <div>
-                            <p className="text-gray-400 text-sm mt-2">
-                                <FaGraduationCap size={18} className="inline-block mr-1" color="red" />
-                                B. Tech, Computer Science and Engineering
-                            </p>
-                            <p className="text-gray-400 text-sm mt-1">
-                                <FaUniversity size={18} className="inline-block mr-1" color="red" />
-                                Kalinga Institute of Industrial Technology, Bhubaneswar
-                            </p>
-                        </div>
-                    </div>
-                    <div>
-                        <h1 className="text-2xl font-bold mt-4">Experiences</h1>
-                        <div>
-                            <p className="text-gray-400 text-sm mt-2">
-                                <FaNodeJs size={18} className="inline-block mr-1" color="green" />
-                                Node JS Developer, Internship | Celebal Technologies
-                            </p>
-                        </div>
-                    </div>
-                    <div>
-                        <h1 className="text-2xl font-bold mt-4">Skills and Interests</h1>
-                        <div className="flex flex-wrap items-center mt-3 gap-0 w-1/5">
-                            <div className="flex ">
-                                <Button className="flex items-center bg-zinc-800 hover:bg-zinc-700 w-20 mr-1">
-                                    <FaReact size={24} color="#61DAFB" className="inline-block" />
-                                    <span className="text-white text-left">React.js</span>
-                                </Button>
-                                <Button className="flex items-center bg-zinc-800 hover:bg-zinc-700 w-28 mr-1">
-                                    <FaReact size={24} color="#61DAFB" className="inline-block" />
-                                    <span className="text-white text-left">React Native</span>
-                                </Button>
-                                <Button className="flex items-center bg-zinc-800 hover:bg-zinc-700 w-20 mr-3">
-                                    <SiNextdotjs size={24} color="#FFFFFF" className="inline-block" />
-                                    <span className="text-white text-left">Next.js</span>
-                                </Button>
-                            </div>
-                            <div className="flex mt-2">
-                                <Button className="flex items-center bg-zinc-800 hover:bg-zinc-700 w-26 mr-1">
-                                    <SiExpress size={24} color="FFFFFF" className="inline-block" />
-                                    <span className="text-white text-left">Express.js</span>
-                                </Button>
-                                <Button className="flex items-center bg-zinc-800 hover:bg-zinc-700 w-24 mr-1">
-                                    <SiMongodb size={24} color="green" className="inline-block" />
-                                    <span className="text-white text-left">MongoDB</span>
-                                </Button>
-                                <Button className="flex items-center bg-zinc-800 hover:bg-zinc-700 w-20 mr-1">
-                                    <FaNodeJs size={24} color="green" className="inline-block" />
-                                    <span className="text-white text-left">Node.js</span>
-                                </Button>
-                            </div>
-                            <div className="flex mt-2">
-                                <Button className="flex items-center bg-zinc-800 hover:bg-zinc-700 w-20 mr-1">
-                                    <FaDocker size={24} color="#2496ED" className="inline-block" />
-                                    <span className="text-white text-left">Docker</span>
-                                </Button>
-                                <Button className="flex items-center bg-zinc-800 hover:bg-zinc-700 w-20 mr-1">
-                                    <FaAws size={24} color="#FF9900" className="inline-block" />
-                                    <span className="text-white text-left">AWS</span>
-                                </Button>
-                                <Button className="flex items-center bg-zinc-800 hover:bg-zinc-700 w-22  mr-1">
-                                    <FaLinux size={24} color="#F0DB4F" className="inline-block" />
-                                    <span className="text-white text-left">Linux</span>
-                                </Button>
-                                <Button className="flex items-center bg-zinc-800 hover:bg-zinc-700 w-20  mr-1">
-                                    <FaGithub size={24} color="#FFFFFF" className="inline-block" />
-                                    <span className="text-white text-left">GitHub</span>
-                                </Button>
-                            </div>
-                        </div>
-                    </div>
-                </BackgroundGradient>
-            </div>
-        </>
-    );
+  return (
+    (<AuroraBackground>
+      <motion.div
+        initial={{ opacity: 0.0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.3,
+          duration: 0.8,
+          ease: "easeInOut",
+        }}
+        className="relative flex flex-col gap-4 items-center justify-center px-4">
+        <Image
+          src='https://res.cloudinary.com/djf6ew5uc/image/upload/v1729432171/spaces/l0qclmrte1yzgbeipxeq.png'
+          height="1000"
+          width="1000"
+          alt="Avatar"
+          className="h-32 w-32 rounded-full object-cover border-2 border-white dark:border-neutral-500" />
+
+        <div className="text-3xl md:text-7xl font-bold dark:text-white text-center">
+          Siddhartha Mukherjee
+        </div>
+        <div
+          className="font-extralight text-center text-base md:text-4xl dark:text-neutral-200 md:py-4 hidden md:block">
+          Software Engineer | Architecting the World with Lines of Code
+        </div>
+        <div
+          className="font-extralight text-center md:text-4xl dark:text-neutral-200 block md:hidden">
+          Software Engineer 
+        </div>
+        <div
+          className="font-extralight text-center md:text-4xl dark:text-neutral-200  block md:hidden">
+            Architecting the World with Lines of Code
+        </div>
+        <p
+            className="font-extralight text-base md:text-2xl md:text-center text-justify dark:text-neutral-200 md:px-14"
+        >
+        A passionate developer and tech enthusiast who loves turning ideas into impactful solutions. From designing seamless user experiences to deploying robust applications, I enjoy exploring the endless possibilities of technology.
+        </p>
+        <button
+          type="button"
+          onClick={()=>{window.open('/blogs')}}
+          className="bg-black mt-5 dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2">
+          Read Blogs
+        </button>
+      </motion.div>
+    </AuroraBackground>)
+  );
 }

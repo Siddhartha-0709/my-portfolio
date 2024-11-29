@@ -2,16 +2,10 @@
 "use client";
 import { motion } from "motion/react";
 import React from 'react'
-import { StarsBackground } from './ui/stars-background'
-import { ShootingStars } from './ui/shooting-stars'
 
 function Contact() {
   return (
     <div className="rounded-md h-[20rem] bg-black flex flex-col items-center justify-center relative w-full">
-      <ShootingStars />
-      <StarsBackground />
-
-
       <p className="font-bold text-xl md:text-4xl text-white">
         {"Connect with "}
         <span className="text-neutral-400">
