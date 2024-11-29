@@ -9,8 +9,8 @@ import { AspectRatio } from "@/components/ui/aspect-ratio"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Skeleton } from "@/components/ui/skeleton"
-import { StarsBackground } from "@/components/ui/stars-background"
-import { ShootingStars } from "@/components/ui/shooting-stars"
+// import { StarsBackground } from "@/components/ui/stars-background"
+// import { ShootingStars } from "@/components/ui/shooting-stars"
 import blogCover from "../assets/blog.png"
 interface Blog {
   _id: string
@@ -57,8 +57,8 @@ export default function BlogListing() {
       <div className="relative">
         {/* Background stars */}
         <div className="absolute inset-0 z-0 bg-black">
-          <StarsBackground />
-          <ShootingStars />
+          {/* <StarsBackground /> */}
+          {/* <ShootingStars /> */}
         </div>
         {/* Foreground content */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 pt-36 md:p-28 md:pt-36 relative z-20">
@@ -110,8 +110,8 @@ function BlogListingSkeleton() {
   return (
     <>
       <div className="absolute inset-0 z-0 bg-black">
-        <StarsBackground />
-        <ShootingStars />
+        {/* <StarsBackground /> */}
+        {/* <ShootingStars /> */}
       </div>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 pt-36 p-28 relative z-20">
         {[...Array(6)].map((_, i) => (
