@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { PinContainer } from "./ui/3d-pin";
-import { HoverEffect } from "./ui/card-hover-effect";
 import dashabhuja from "../app/assets/dashabhuja.png";
 import compilex from "../app/assets/compilex.png";
 import seva4you from "../app/assets/sava4you.png";

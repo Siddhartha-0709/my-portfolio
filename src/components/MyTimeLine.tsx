@@ -1,9 +1,7 @@
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
-import { ShootingStars } from "./ui/shooting-stars";
-import { StarsBackground } from "./ui/stars-background";
 
-export function MyTimeLine() {
+export default function MyTimeLine() {
   const data = [
     {
       title: "2024",
@@ -151,15 +149,6 @@ export function MyTimeLine() {
   ];
   return (
     <>
-      {/* <div className="rounded-md bg-black flex flex-col items-center justify-center relative w-full">
-        <h2 className="relative flex-col md:flex-row z-10 text-2xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8 mt-32">
-          Changelog from my Journey and Updates
-        </h2>
-        <h4 className="relative flex-col md:flex-row z-10 text-xl md:text-xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8 mt-4">This is the list of updates which I have made over the past few years.</h4>
-      <Timeline data={data} />    
-      </div>
-   
-   */}
    
    <div className=" w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
       {/* Radial gradient for the container to give a faded look */}
@@ -167,7 +156,5 @@ export function MyTimeLine() {
       <Timeline data={data} />    
     </div>
     </>
-
-
   );
 }

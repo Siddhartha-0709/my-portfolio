@@ -4,8 +4,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import { AuroraBackground } from "../components/ui/aurora-background";
 import Image from "next/image";
-import profilePic from "../app/assets/profile.png";
-export function HomeHero() {
+export default function HomeHero() {
   return (
     (<AuroraBackground>
       <motion.div

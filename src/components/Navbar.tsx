@@ -15,7 +15,7 @@ export default function Navbar({ className }: { className?: string }) {
   const menuItems = [
     { href: "/", label: "Home" },
     { href: "/blogs", label: "Blogs" },
-    { href: "/https://www.youtube.com/@siddharthadotcom", label: "YouTube" },
+    { href: "https://www.youtube.com/@siddharthadotcom", label: "YouTube" },
     { href: "https://github.com/Siddhartha-0709", label: "GitHub" },
   ];
 
