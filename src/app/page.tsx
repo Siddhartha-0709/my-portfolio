@@ -1,15 +1,15 @@
 import Contact from "@/components/Contact";
-import  HomeHero from "@/components/HomeHero";
-import  MyTimeLine  from "@/components/MyTimeLine";
+import HomeHero from "@/components/HomeHero";
+import MyTimeLine from "@/components/MyTimeLine";
 import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
     <>
       <HomeHero />
-      <Projects/>
-      <MyTimeLine/>
-      <Contact/>
+      <Projects />
+      <MyTimeLine />
+      <Contact />
     </>
   );
 }

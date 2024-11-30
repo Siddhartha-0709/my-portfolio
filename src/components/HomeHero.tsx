@@ -22,7 +22,7 @@ export default function HomeHero() {
           height="1000"
           width="1000"
           alt="Avatar"
-          className="h-32 md:mt-0 mt-32 w-32 rounded-full object-cover border-2 border-white dark:border-neutral-500" />
+          className="h-32 md:mt-0 mt-22 w-32 rounded-full object-cover border-2 border-white dark:border-neutral-500" />
 
         <div className="text-3xl md:text-7xl font-bold dark:text-white text-center">
           Siddhartha Mukherjee
@@ -44,16 +44,13 @@ export default function HomeHero() {
         >
           A passionate developer and tech enthusiast who loves turning ideas into impactful solutions. From designing seamless user experiences to deploying robust applications, I enjoy exploring the endless possibilities of technology.
         </p>
-        <div className="mb-10 md:mb-0 mt-2 flex flex-col md:flex-row items-center justify-center gap-3 ">
-          <button className="relative w-[435px] mt-10 inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+          <button className="relative w-[390px] mt-10 inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
           onClick={()=>{window.location.href = '/blogs'}}>
             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
             <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
               Read Blogs
             </span>
           </button>
-        </div>
-
       </motion.div>
     </AuroraBackground>)
   );

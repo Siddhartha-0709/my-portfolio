@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Head from 'next/head';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,8 +27,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-black">
+      <Head>
+        <meta name="theme-color" content="#000000" /> 
+      </Head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased dark bg-black`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased dark bg-black w-[100%]`}
       >
         <Navbar className="z-50" />
         {children}

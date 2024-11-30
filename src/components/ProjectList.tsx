@@ -9,7 +9,7 @@ import plantit from "../app/assets/plantit.png";
 export default function ProjectList() {
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-32 md:gap-0 w-[80%] mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-32 md:gap-0 mx-auto">
         {projects1.map((project) => (
           <div className=" "
           key={project.title}
@@ -42,7 +42,7 @@ export default function ProjectList() {
           </div>
         ))}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 pb-32 mt-28 gap-32 md:gap-0 w-[80%] mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-32 md:gap-0 mx-auto mt-32 mb-20">
         {projects2.map((project) => (
           <div className=" flex items-center justify-center "
           key={project.title}

@@ -29,11 +29,11 @@ export default function Navbar({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "fixed inset-x-0 w-full z-50 bg-black",
+        "fixed w-[100%] z-50 bg-black",
         className
       )}
     >
-      <div className="items-center justify-between">
+      <div className="">
         <Link href="/">
           <TextGenerateEffect className="hidden md:block absolute left-[1%] top-10" words={'Siddhartha'} size="text-2xl font-bold" />
         </Link>
@@ -65,35 +65,14 @@ export default function Navbar({ className }: { className?: string }) {
 
 
       {/* Mobile Menu */}
-      <div className="md:hidden h-14 flex items-center justify-center bg-black p-1 border-b-2 border-white">
+      <div className="md:hidden h-14 flex items-center justify-center bg-black p-1 border-b-2 border-white w-[100%]">
         <Link href="/">
           <TextGenerateEffect className="absolute left-0 top-3.5 bg-black" words={'Siddhartha'} size="text-xl font-bold" />
         </Link> 
-        <div className="overflow-hidden rounded-md">
-            <div className="absolute inset-x-10 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
-            <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
-            <div className="absolute inset-x-30 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
-            <div className="absolute inset-x-40 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
-          <div className="h-14 relative">
-            {/* Gradients */}
-
-            {/* Core component */}
-            {/* <SparklesCore
-              background="transparent"
-              minSize={0.4}
-              maxSize={1}
-              particleDensity={1400}
-              className="h-full w-full"
-              particleColor="#FFFFFF"
-            /> */}
-
-            {/* Radial Gradient to prevent sharp edges */}
-            <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
-          </div>
-        </div>
+        
         <Sheet>
           <SheetTrigger asChild>
-            <Button variant="outline" size="icon" className="absolute right-2">
+            <Button variant="outline" size="icon" className="absolute right-1">
               <MenuIcon className="h-7 w-7" />
               <span className="sr-only">Toggle menu</span>
             </Button>
