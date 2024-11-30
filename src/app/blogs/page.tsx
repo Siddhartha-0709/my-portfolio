@@ -109,13 +109,9 @@ function BlogCard({ blog, index }: { blog: Blog; index: number }) {
 function BlogListingSkeleton() {
   return (
     <>
-      <div className="absolute inset-0 z-0 bg-black">
-        {/* <StarsBackground /> */}
-        {/* <ShootingStars /> */}
-      </div>
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 pt-36 p-28 relative z-20">
+      <div className="grid gap-6 sm:grid-cols-1 lg:grid-cols-3 pt-36 md:p-28 p-2 relative z-20">
         {[...Array(6)].map((_, i) => (
-          <Card key={i} className="overflow-hidden flex flex-col justify-between h-full bg-black">
+          <Card key={i} className="overflow-hidden flex flex-col justify-between h-full bg-black md:w-auto">
             <div>
               <CardHeader className="p-0">
                 <AspectRatio ratio={16 / 9}>

@@ -9,9 +9,9 @@ import plantit from "../app/assets/plantit.png";
 export default function ProjectList() {
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-32 md:gap-0">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-32 md:gap-0 w-[80%] mx-auto">
         {projects1.map((project) => (
-          <div className="w-full flex items-center justify-center "
+          <div className=" "
           key={project.title}
           >
             <PinContainer
@@ -42,9 +42,9 @@ export default function ProjectList() {
           </div>
         ))}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 pb-32 mt-28 gap-32 md:gap-0">
+      <div className="grid grid-cols-1 md:grid-cols-3 pb-32 mt-28 gap-32 md:gap-0 w-[80%] mx-auto">
         {projects2.map((project) => (
-          <div className="w-full flex items-center justify-center "
+          <div className=" flex items-center justify-center "
           key={project.title}
           >
             <PinContainer

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import { AuroraBackground } from "../components/ui/aurora-background";
 import Image from "next/image";
+
 export default function HomeHero() {
   return (
     (<AuroraBackground>
@@ -21,7 +22,7 @@ export default function HomeHero() {
           height="1000"
           width="1000"
           alt="Avatar"
-          className="h-32 w-32 rounded-full object-cover border-2 border-white dark:border-neutral-500" />
+          className="h-32 md:mt-0 mt-32 w-32 rounded-full object-cover border-2 border-white dark:border-neutral-500" />
 
         <div className="text-3xl md:text-7xl font-bold dark:text-white text-center">
           Siddhartha Mukherjee
@@ -32,23 +33,27 @@ export default function HomeHero() {
         </div>
         <div
           className="font-extralight text-center md:text-4xl dark:text-neutral-200 block md:hidden">
-          Software Engineer 
+          Software Engineer
         </div>
         <div
           className="font-extralight text-center md:text-4xl dark:text-neutral-200  block md:hidden">
-            Architecting the World with Lines of Code
+          Architecting the World with Lines of Code
         </div>
         <p
-            className="font-extralight text-base md:text-2xl md:text-center text-justify dark:text-neutral-200 md:px-14"
+          className="font-extralight text-base md:text-2xl md:text-center text-justify dark:text-neutral-200 md:px-14"
         >
-        A passionate developer and tech enthusiast who loves turning ideas into impactful solutions. From designing seamless user experiences to deploying robust applications, I enjoy exploring the endless possibilities of technology.
+          A passionate developer and tech enthusiast who loves turning ideas into impactful solutions. From designing seamless user experiences to deploying robust applications, I enjoy exploring the endless possibilities of technology.
         </p>
-        <button
-          type="button"
-          onClick={()=>{window.open('/blogs')}}
-          className="bg-black mt-5 dark:bg-white rounded-full w-fit text-white dark:text-black px-4 py-2">
-          Read Blogs
-        </button>
+        <div className="mb-10 md:mb-0 mt-2 flex flex-col md:flex-row items-center justify-center gap-3 ">
+          <button className="relative w-[435px] mt-10 inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+          onClick={()=>{window.location.href = '/blogs'}}>
+            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+            <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+              Read Blogs
+            </span>
+          </button>
+        </div>
+
       </motion.div>
     </AuroraBackground>)
   );
