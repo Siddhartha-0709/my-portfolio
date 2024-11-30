@@ -63,7 +63,7 @@ export const AnimatedTestimonials = ({
                     z: isActive(index) ? 0 : -100,
                     rotate: isActive(index) ? 0 : randomRotateY(),
                     zIndex: isActive(index)
-                      ? 999
+                      ? 10
                       : testimonials.length + 2 - index,
                     y: isActive(index) ? [0, -80, 0] : 0,
                   }}
@@ -92,7 +92,7 @@ export const AnimatedTestimonials = ({
             </AnimatePresence>
           </div>
         </div>
-        <div className="flex justify-between flex-col py-4">
+        <div className="flex justify-between flex-col py-4 relative z-20">
           <motion.div
             key={active}
             initial={{
@@ -115,10 +115,10 @@ export const AnimatedTestimonials = ({
             <h3 className="text-2xl font-bold dark:text-white text-black">
               {testimonials[active].name}
             </h3>
-            <p className="text-sm text-gray-500 dark:text-neutral-500">
+            <p className="text-sm text-gray-500 dark:text-neutral-300">
               {testimonials[active].designation}
             </p>
-            <motion.p className="text-lg text-gray-500 mt-8 dark:text-neutral-300">
+            <motion.p className="text-lg text-gray-500 mt-8 dark:text-neutral-300 ">
               {testimonials[active].quote.split(" ").map((word, index) => (
                 <motion.span
                   key={index}

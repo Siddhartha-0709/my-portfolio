@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 import preenon from "@/app/assets/preenon.jpeg"
 import sayan from "@/app/assets/sayan.jpeg"
+import sounak from "@/app/assets/sounak.jpg"
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 export default function Testimonial() {
     const testimonials = [
@@ -16,10 +17,17 @@ export default function Testimonial() {
         },
         {
             quote:
-                "Siddhartha is a skilled developer with a strong work ethic. He excels in addressing complex technical challenges and is a valuable team player.",
-            name: "Sayan Mazumder",
+                "Siddhartha is a diligent and innovative developer with exceptional skills. He consistently delivers high-quality work and is a great guy to work with.",
+            name: "Sayan Majumder",
             designation: "Upcoming Analyst at PwC India",
             src: sayan,
+        },
+        {
+            quote:
+                "Siddhartha is a true professional who brings a wealth of knowledge and creativity to every project. His ability to understand complex requirements and translate them into intuitive, high-performing applications is remarkable.",
+            name: "Sounak Jyoti",
+            designation: "Upcoming Software Engineer at MathCo.",
+            src: sounak,
         },
     ];
     return (
@@ -47,3 +55,5 @@ export default function Testimonial() {
         </>
     );
 }
+
+
