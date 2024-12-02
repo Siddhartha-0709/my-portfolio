@@ -1,147 +1,37 @@
-'use client'
-import * as React from "react"
-import Image from "next/image"
-import Link from "next/link"
-import axios from 'axios'
-import { motion } from "framer-motion"
+"use client"
+import { DotLottieReact } from '@lottiefiles/dotlottie-react'
 import { ArrowRight } from 'lucide-react'
-import { AspectRatio } from "@/components/ui/aspect-ratio"
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Skeleton } from "@/components/ui/skeleton"
-// import { StarsBackground } from "@/components/ui/stars-background"
-// import { ShootingStars } from "@/components/ui/shooting-stars"
-import blogCover from "../assets/blog.png"
-interface Blog {
-  _id: string
-  title: string
-  shortDescription: string
-  thumbnailUrl: string
-}
-export default function BlogListing() {
-  const [blogs, setBlogs] = React.useState<Blog[]>([])
-  const [isLoading, setIsLoading] = React.useState(true)
-  const [error, setError] = React.useState<string | null>(null)
-  const getBlogs = async () => {
-    try {
-      setIsLoading(true)
-      const response = await axios.get('/api/blogs')
-      setBlogs(response.data)
-    } catch (err) {
-      console.error(err)
-      setError('Failed to fetch blogs. Please try again later.')
-    } finally {
-      setIsLoading(false)
-    }
-  }
-  React.useEffect(() => {
-    getBlogs()
-  }, [])
-  if (isLoading) {
-    return <BlogListingSkeleton />
-  }
-  if (error) {
-    return <ErrorMessage message={error} />
-  }
+import React from 'react'
+import animation from '@/app/assets/docs/animations/163d0d67-749b-460e-9aa9-a749aae4e032.json'
+function page() {
   return (
     <>
-      {/* <div>
-        <Image
-          src={blogCover}
-          alt="Blogs"
-          width={500}
-          height={500}
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-        />
-      </div> */}
-      <div className="relative">
-        {/* Background stars */}
-        <div className="absolute inset-0 z-0 bg-black">
-          {/* <StarsBackground /> */}
-          {/* <ShootingStars /> */}
-        </div>
-        {/* Foreground content */}
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 pt-36 md:p-28 md:pt-36 relative z-20">
-          {blogs.map((blog, index) => (
-            <BlogCard key={blog._id} blog={blog} index={index} />
-          ))}
-        </div>
-      </div>
-    </>
-  )
-}
-function BlogCard({ blog, index }: { blog: Blog; index: number }) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="flex flex-col h-full bg-black"
-    >
-      <Card className="flex flex-col justify-between h-full bg-black">
-        <div>
-          <CardHeader className="p-0 bg-black">
-            <AspectRatio ratio={16 / 9}>
-              <Image
-                src={blog.thumbnailUrl}
-                alt={blog.title}
-                fill
-                className="bg-black"
-              />
-            </AspectRatio>
-          </CardHeader>
-          <CardContent className="p-4">
-            <CardTitle className="line-clamp-2 mb-2">{blog.title}</CardTitle>
-            <p className="text-sm text-muted-foreground line-clamp-3">{blog.shortDescription}</p>
-          </CardContent>
-        </div>
-        <CardFooter className="p-4 pt-0">
-          <Button asChild variant="link" className="px-0">
-            <Link href={`/blogs/${blog._id}`}>
-              Read more <ArrowRight className="ml-0 mt-1 h-3 w-3" />
-            </Link>
-          </Button>
-        </CardFooter>
-      </Card>
-    </motion.div>
-  )
-}
-function BlogListingSkeleton() {
-  return (
-    <>
-      <div className="grid gap-6 sm:grid-cols-1 lg:grid-cols-3 pt-36 md:p-28 p-2 relative z-20">
-        {[...Array(6)].map((_, i) => (
-          <Card key={i} className="overflow-hidden flex flex-col justify-between h-full bg-black md:w-auto">
-            <div>
-              <CardHeader className="p-0">
-                <AspectRatio ratio={16 / 9}>
-                  <Skeleton className="h-full w-full" />
-                </AspectRatio>
-              </CardHeader>
-              <CardContent className="p-4 space-y-2">
-                <Skeleton className="h-6 w-3/4" />
-                <Skeleton className="h-4 w-full" />
-                <Skeleton className="h-4 w-full" />
-              </CardContent>
+      <div className='h-screen py-32 bg-slate-900'>
+        <div className='grid grid-cols-2'>
+          <div>
+            <h1 className='text-5xl text-white text-left pl-10 mt-32 font-bold'>Welcome to Docs by Siddhartha</h1>
+            <p className='text-xl text-white text-left pl-10 mt-4'>Next-gen documentation that builds reading habits into your workflow.</p>
+            <div className='mt-14 pl-10'>
+              <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+                onClick={() => {
+                  window.location.href = "/blogs/docs"
+                }}
+              >
+                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+                  Check out the Docs
+                  <ArrowRight className='ml-2' />
+                </span>
+              </button>
             </div>
-            <CardFooter className="p-4 pt-0">
-              <Skeleton className="h-9 w-28" />
-            </CardFooter>
-          </Card>
-        ))}
+          </div>
+          <div className='px-10'>
+          <iframe width="100%" height="150%" src="https://lottie.host/embed/e5174920-ea1c-4c50-b501-43e3d2bb39f1/UoqBvw88G3.lottie"></iframe>
+          </div>
+        </div>
       </div>
     </>
   )
 }
-function ErrorMessage({ message }: { message: string }) {
-  return (
-    <Card className="bg-destructive/15 border-destructive">
-      <CardHeader>
-        <CardTitle>Error</CardTitle>
-      </CardHeader>
-      <CardContent>
-        <p>{message}</p>
-      </CardContent>
-    </Card>
-  )
-}
+
+export default page

@@ -33,9 +33,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased dark bg-black w-[100%]`}
       >
-        <Navbar className="z-50" />
+        {(typeof window !== 'undefined' && window.location.pathname !== "/blogs/docs") && <Navbar className="z-50" />}
         {children}
       </body>
     </html>
   );
 }
+

@@ -29,6 +29,14 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
@@ -56,6 +64,14 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
@@ -66,4 +82,204 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* styles/globals.css or Tailwind config */
+/* General Styling for the Prose */
+.prose {
+  font-family: 'Inter', sans-serif; /* Use a clean, modern font */
+  color: #333; /* Base text color for paragraphs and body */
+  line-height: 1.75; /* Comfortable line height */
+  font-size: 1rem; /* Base font size */
+  padding: 1rem;
+  @media (max-width: 768px) {
+    max-width: 44ch;
+    padding: 0.3rem;
+    padding-top: 1rem;
+  }
+}
+
+/* Headings */
+.prose h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e293b; /* Deep gray-blue for heading */
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+.prose h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #334155;
+  border-left: 4px solid #0ea5e9; /* Accent line for subheadings */
+  padding-left: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+    padding-left: 0.2rem;
+  }
+}
+
+.prose h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #475569;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+
+.prose h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #64748b;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Paragraphs */
+.prose p {
+  margin-bottom: 1.25rem; /* Add space between paragraphs */
+  color: #374151; /* Medium dark gray for paragraphs */
+}
+
+/* Code Blocks */
+.prose pre {
+  background-color: #1e1e2e; /* Dark background for code blocks */
+  color: #d4d4d8; /* Soft white text for contrast */
+  font-family: 'Fira Code', monospace;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  font-size: 0.875rem; /* Smaller text for code blocks */
+}
+
+.prose code {
+  background-color: ''; /* Light gray for inline code */
+  color: #ffffff; /* Red for inline code */
+  font-family: 'Fira Code', monospace;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  font-size: 0.9rem;
+}
+
+/* Blockquotes */
+.prose blockquote {
+  border-left: 4px solid #0ea5e9; /* Blue accent */
+  background-color: #f1f5f9; /* Light gray background */
+  color: #374151; /* Dark gray text */
+  padding: 0.5rem 1rem;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+/* Lists */
+.prose ul {
+  list-style-type: disc; /* Default bullet points */
+  padding-left: 1.5rem; /* Indent list items */
+  margin-bottom: 1.25rem;
+}
+
+.prose ol {
+  list-style-type: decimal; /* Numbered list */
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.prose li {
+  margin-bottom: 0.5rem; /* Space between list items */
+}
+
+.prose li > p {
+  margin-bottom: 0; /* Prevent additional margin for inline paragraphs in lists */
+}
+
+/* Links */
+.prose a {
+  color: #0ea5e9; /* Blue link */
+  text-decoration: underline;
+}
+
+.prose a:hover {
+  color: #0369a1; /* Darker blue on hover */
+  text-decoration: none;
+}
+
+/* Tables */
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+.prose table th,
+.prose table td {
+  border: 1px solid #ddd; /* Light gray border */
+  padding: 0.75rem;
+}
+
+.prose table th {
+  background-color: #f9fafb; /* Light gray header background */
+  color: #111827; /* Dark text for headers */
+  text-align: left;
+  border-right: 1px solid #e5e7eb; /* Slight contrast for headers */
+}
+
+.prose table td {
+  background-color: #ffffff; /* White background for cells */
+}
+
+/* Horizontal Rules */
+.prose hr {
+  border: 0;
+  height: 1px;
+  background-color: #e5e7eb;
+  margin: 2rem 0;
+}
+
+/* Images */
+.prose img {
+  display: block;
+  max-width: 100%; /* Make images responsive */
+  margin: 1.5rem auto; /* Center the image */
+  border-radius: 0.5rem; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for focus */
+}
+
+/* Inline Elements */
+.prose strong {
+  font-weight: 700; /* Bold text */
+  color: #111827; /* Dark gray */
+}
+
+.prose em {
+  font-style: italic; /* Italics for emphasis */
+  color: #374151;
+}
+
+.prose del {
+  text-decoration: line-through;
+  color: #d14343; /* Red for strikethrough text */
+}
+
+/* Inline Quotes */
+.prose q {
+  quotes: "“" "”" "‘" "’"; /* Fancy quotation marks */
+  font-style: italic;
+}
+
+/* Captions */
+.prose figcaption {
+  color: #6b7280; /* Gray text */
+  font-size: 0.875rem;
+  text-align: center;
+  margin-top: 0.5rem;
 }
