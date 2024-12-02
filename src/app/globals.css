@@ -164,7 +164,7 @@
 
 .prose code {
   background-color: ''; /* Light gray for inline code */
-  color: #ffffff; /* Red for inline code */
+  color: #91ff00; /* Red for inline code */
   font-family: 'Fira Code', monospace;
   padding: 0.2rem 0.4rem;
   border-radius: 0.25rem;
