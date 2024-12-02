@@ -5,13 +5,13 @@ import React from 'react'
 function Page() {
   return (
     <>
-      <div>
-        <h1 className='text-5xl text-black text-left pl-10 mt-20 font-bold'>A Guide for the People in Tech</h1>
-        <p className='text-xl text-black text-left pl-10 mt-12'>
+      <div className=' bg-white p-2 md:p-0'>
+        <h1 className='text-2xl md:text-5xl text-black text-left md:pl-10 mt-20 font-bold'>A Guide for the People in Tech</h1>
+        <p className='text-xl text-black text-left md:pl-10 mt-12'>
           Reading the docs is a great way to learn. It’s a great way to learn about a new technology, or a new programming language, or a new framework. We have designed this website so that you can develop the habit to read from the docs. In future, our attempt is to provide you guide with all videos so that you can learn directly from docs and get all information in one place. No need to make notes or write down anything. <br /><br />Just read the docs.
         </p>
       </div>
-      <div className='mt-14 pl-10'>
+      <div className='mt-14 md:pl-10 mb-20 p-2 md:p-0'>
         <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
           onClick={() => {
             window.location.href = "/blogs/docs/cpp?topicName=full"
