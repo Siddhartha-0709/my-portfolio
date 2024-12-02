@@ -141,9 +141,12 @@ const menuItems = [
     // ]
   },
   {
-    title: "Tutorials",
-    url: "/blogs/tutorials",
+    title: "AWS",
+    url: "/blogs/docs",
     icon: Home,
+    submenu: [
+      { title: "EC2", url: "/blogs/docs/AWS?topicName=EC2" },
+    ]
   }
 ]
 
