@@ -93,7 +93,7 @@
   font-size: 1rem; /* Base font size */
   padding: 1rem;
   @media (max-width: 768px) {
-    max-width: 44ch;
+    max-width: 44.5ch;
     padding: 0.3rem;
     padding-top: 1rem;
   }
