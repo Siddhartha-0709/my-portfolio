@@ -145,7 +145,10 @@ const menuItems = [
     url: "/blogs/docs",
     icon: Home,
     submenu: [
+      { title: "IAM", url: "/blogs/docs/AWS?topicName=IAM" },
       { title: "EC2", url: "/blogs/docs/AWS?topicName=EC2" },
+      { title: "Elastic Beanstalk", url: "/blogs/docs/AWS?topicName=ElasticBeanstalk" },
+      { title: "Load Balancer", url: "/blogs/docs/AWS?topicName=LoadBalancer" },
     ]
   }
 ]

@@ -49,14 +49,14 @@ export default function UploadForm() {
         className="border border-white  p-8 shadow-md rounded w-full"
         style={{ width: "100%" }}
       >
-        <h2 className="text-3xl font-bold mb-4 text-gray-800">
+        <h2 className="text-3xl font-bold mb-4 text-black">
           Upload Chapter Info
         </h2>
 
         <div className="mb-4">
           <label
             htmlFor="chapterName"
-            className="block text-gray-700 font-bold mb-2"
+            className="block text-black font-bold mb-2"
           >
             Chapter Name
           </label>
@@ -66,7 +66,7 @@ export default function UploadForm() {
             name="chapterName"
             value={formData.chapterName}
             onChange={handleInputChange}
-            className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 text-black focus:ring-blue-500 text-gray-700"
+            className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 text-black focus:ring-blue-500 "
             required
           />
         </div>
@@ -74,7 +74,7 @@ export default function UploadForm() {
         <div className="mb-4">
           <label
             htmlFor="topicName"
-            className="block text-gray-700 font-bold mb-2"
+            className="block text-black font-bold mb-2"
           >
             Topic Name
           </label>
@@ -84,7 +84,7 @@ export default function UploadForm() {
             name="topicName"
             value={formData.topicName}
             onChange={handleInputChange}
-            className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 text-black focus:ring-blue-500 text-gray-700"
+            className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 text-black focus:ring-blue-500 "
             required
           />
         </div>
@@ -92,7 +92,7 @@ export default function UploadForm() {
         <div className="mb-4">
           <label
             htmlFor="markdownFile"
-            className="block text-gray-700 font-bold mb-2"
+            className="block text-black font-bold mb-2"
           >
             Markdown File
           </label>
