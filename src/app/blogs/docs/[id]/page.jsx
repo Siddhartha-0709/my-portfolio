@@ -4,6 +4,7 @@ import { useParams, useSearchParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import hljs from "highlight.js";
 
 function Page() {
     const searchParams = useSearchParams();
@@ -33,6 +34,12 @@ function Page() {
         getDoc();
     }, []);
 
+    useEffect(() => {
+        if (markdownContent) {
+            hljs.highlightAll();
+        }
+    }, [markdownContent]); // Re-run when markdownContent changes
+
     return (
         <>
             <div>
@@ -40,7 +47,8 @@ function Page() {
                     {error ? (
                         <p className="text-red-500">Failed to load markdown content.</p>
                     ) : markdownContent ? (
-                        <div className="prose prose-lg min-w-full bg-white p-4 rounded-md shadow-sm"
+                        <div
+                            className="prose prose-lg min-w-full bg-white p-4 rounded-md shadow-sm"
                         >
                             <ReactMarkdown remarkPlugins={[remarkGfm]}>{markdownContent}</ReactMarkdown>
                         </div>
@@ -49,7 +57,6 @@ function Page() {
                     )}
                 </div>
             </div>
-
         </>
     );
 }

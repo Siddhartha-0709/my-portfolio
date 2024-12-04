@@ -36,6 +36,11 @@ export default function UploadForm() {
       const response = await axios.post('/api/docs', formData);
       console.log("Backend response:", response.data);
       setLoading(false);
+      setFormData({
+        chapterName: "",
+        topicName: "",
+        markdownUrl: "",
+      });
     } catch (error) {
       console.log(error);
       setLoading(false);
@@ -47,7 +52,7 @@ export default function UploadForm() {
       <form
         onSubmit={handleSubmit}
         className="border border-white  p-8 shadow-md rounded w-full"
-        style={{ width: "100%" }}
+        style={{ width: "83.3vw " }}
       >
         <h2 className="text-3xl font-bold mb-4 text-black">
           Upload Chapter Info
@@ -111,7 +116,7 @@ export default function UploadForm() {
               return (
                 <button
                   type="button"
-                  className="w-full bg-gray-800 text-white py-2 rounded"
+                  className="w-full bg-black text-white py-2 rounded"
                   onClick={() => open()}
                 >
                   Upload Markdown File
@@ -123,7 +128,7 @@ export default function UploadForm() {
 
         <button
           type="submit"
-          className={`w-full bg-gray-800 text-white py-2 rounded`}
+          className={`w-full bg-black text-white py-2 rounded`}
           disabled={loading}
         >
           {loading ? "Submitting..." : "Submit"}

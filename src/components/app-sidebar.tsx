@@ -132,6 +132,11 @@ const menuItems = [
     icon: Home,
   },
   {
+    title: "HTML",
+    url: "/blogs/docs/HTML?topicName=full",
+    icon: Home,
+  },
+  {
     title: "C++ Resources",
     url: "/blogs/docs/cpp?topicName=full",
     icon: Home,
@@ -151,7 +156,20 @@ const menuItems = [
       { title: "Load Balancer", url: "/blogs/docs/AWS?topicName=LoadBalancer" },
       { title: "Lambda (Serwerless Functions)", url: "/blogs/docs/AWS?topicName=Lambda" },
     ]
-  }
+  },
+  {
+    title: "DevOps",
+    url: "/blogs/docs/DevOps",
+    icon: Home,
+    submenu: [
+      // { title: "IAM", url: "/blogs/docs/AWS?topicName=IAM" },
+      // { title: "EC2", url: "/blogs/docs/AWS?topicName=EC2" },
+      // { title: "Elastic Beanstalk", url: "/blogs/docs/AWS?topicName=ElasticBeanstalk" },
+      // { title: "Load Balancer", url: "/blogs/docs/AWS?topicName=LoadBalancer" },
+      // { title: "Lambda (Serwerless Functions)", url: "/blogs/docs/AWS?topicName=Lambda" },
+    ]
+  },
+  
 ]
 
 export function ResponsiveSidebar() {
@@ -196,7 +214,7 @@ export function ResponsiveSidebar() {
           <SidebarContent className="bg-black">
             <SidebarGroup>
               <div className="text-2xl text-orange-600 font-bold mb-10 pl-4 py-4">
-                <Link href="/blogs/docs">Siddhartha</Link>
+                <Link href="/">Siddhartha</Link>
               </div>
               <SidebarGroupContent>
                 <SidebarMenu>
