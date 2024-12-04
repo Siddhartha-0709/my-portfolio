@@ -154,7 +154,7 @@ const menuItems = [
       { title: "EC2", url: "/blogs/docs/AWS?topicName=EC2" },
       { title: "Elastic Beanstalk", url: "/blogs/docs/AWS?topicName=ElasticBeanstalk" },
       { title: "Load Balancer", url: "/blogs/docs/AWS?topicName=LoadBalancer" },
-      { title: "Lambda (Serwerless Functions)", url: "/blogs/docs/AWS?topicName=Lambda" },
+      { title: "Lambda (Serverless Functions)", url: "/blogs/docs/AWS?topicName=Lambda" },
     ]
   },
   {
