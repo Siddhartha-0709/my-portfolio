@@ -162,11 +162,19 @@ const menuItems = [
     url: "/blogs/docs/DevOps",
     icon: Home,
     submenu: [
-      // { title: "IAM", url: "/blogs/docs/AWS?topicName=IAM" },
+      { title: "Coming Soon", url: "/blogs/docs/DevOps" },
       // { title: "EC2", url: "/blogs/docs/AWS?topicName=EC2" },
       // { title: "Elastic Beanstalk", url: "/blogs/docs/AWS?topicName=ElasticBeanstalk" },
       // { title: "Load Balancer", url: "/blogs/docs/AWS?topicName=LoadBalancer" },
       // { title: "Lambda (Serwerless Functions)", url: "/blogs/docs/AWS?topicName=Lambda" },
+    ]
+  },
+  {
+    title: "Blogs",
+    url: "/blogs/docs",
+    icon: Home,
+    submenu: [
+      { title: "Building my first SaaS Project", url: "/blogs/docs/Blogs?topicName=MyFirstSaaSApplication" },
     ]
   },
   
