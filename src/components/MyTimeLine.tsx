@@ -22,7 +22,7 @@ export default function MyTimeLine() {
             ✅ Started my YouTube channel a place for tech videos
           </p>
           <p className="text-lg flex gap-2 items-center text-neutral-700 dark:text-neutral-300">
-            ✅ Still the year has not yet ended 😜 . . .
+            ✅ Achieved a few 100 subscribers on YouTube
           </p>
         </div>
       ),
