@@ -13,10 +13,10 @@ export default function MyTimeLine() {
             YouTube, Internship and Placement Journey
           </p>
           <p className="text-lg flex gap-2 items-center text-neutral-700 dark:text-neutral-300">
-            ✅ Secured internship in Celebal Technologies as a NodeJS developer.
+            ✅ Secured internship at KPMG India as an analyst.
           </p>
           <p className="text-lg flex gap-2 items-center text-neutral-700 dark:text-neutral-300">
-            ✅ Secured internship at an MNC as an analyst.
+            ✅ Secured internship in Celebal Tech. as a NodeJS developer.
           </p>
           <p className="text-lg flex gap-2 items-center text-neutral-700 dark:text-neutral-300">
             ✅ Started my YouTube channel a place for tech videos
@@ -38,7 +38,7 @@ export default function MyTimeLine() {
             ✅ Learnt about mobile application development with React Native
           </p>
           <p className="text-lg flex gap-2 items-center text-neutral-700 dark:text-neutral-300">
-            ✅ Learnt about production grade deployment of web apps and backend
+            ✅ Learnt about production grade deployment of web applications
           </p>
           <p className="text-lg flex gap-2 items-center text-neutral-700 dark:text-neutral-300">
             ✅ Got to know about Docker and DevOps Practices
@@ -56,9 +56,9 @@ export default function MyTimeLine() {
           <p className="text-2xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-lime-400 to-green-600">
             Internals of the Computer and Web Development
           </p>
-          <p className="text-lg flex gap-2 items-center text-neutral-700 dark:text-neutral-300">
-            ✅ Got interested about Operating Systems, Database Management Systems
-          </p>
+            <p className="text-lg flex gap-2 items-center text-neutral-700 dark:text-neutral-300">
+            ✅ Explored Concepts of OS, DBMS and Computer Networks
+            </p>
           <p className="text-lg flex gap-2 items-center text-neutral-700 dark:text-neutral-300">
             ✅ Started my journey with React, Tailwind and Bootstrap
           </p>
@@ -79,7 +79,7 @@ export default function MyTimeLine() {
             Introduced to Exciting World of Software Development
           </p>
           <p className="text-lg flex gap-2 items-center text-neutral-700 dark:text-neutral-300">
-            ✅ Got interested about the subject of Data Structures and Algorithms.
+            ✅ Got interested about Data Structures and Algorithms
           </p>
           <p className="text-lg flex gap-2 items-center text-neutral-700 dark:text-neutral-300">
             ✅ Got familiar with Object Oriented Programming
@@ -88,7 +88,7 @@ export default function MyTimeLine() {
             ✅ Understood how to write clean, optimised and efficient code.
           </p>
           <p className="text-lg flex gap-2 items-center text-neutral-700 dark:text-neutral-300">
-            ✅ Got introduced to Web Development with HTML, CSS and JavaScript
+            ✅ Got introduced to Web Development with HTML, CSS and JS
           </p>
         </div>
       ),
@@ -104,7 +104,7 @@ export default function MyTimeLine() {
             ✅ Scored 87% in my 12th grade exams
           </p>
           <p className="text-lg flex gap-2 items-center text-neutral-700 dark:text-neutral-300">
-            ✅ Took up Engineering at Kalinga Institute of Industrial Technology, Odisha
+            ✅ Took up Engineering at Kalinga Institute of Industrial Technology
           </p>
           <p className="text-lg flex gap-2 items-center text-neutral-700 dark:text-neutral-300">
             ✅ Computer Science and Engineering was my major
