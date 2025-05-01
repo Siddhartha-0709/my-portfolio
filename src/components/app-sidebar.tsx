@@ -162,7 +162,7 @@ const menuItems = [
     url: "/blogs/docs/DevOps",
     icon: Home,
     submenu: [
-      { title: "Coming Soon", url: "/blogs/docs/DevOps" },
+      { title: "Access VPC using Terminal", url: "/blogs/docs/DevOps?topicName=access-vpc-using-terminal" },
       // { title: "EC2", url: "/blogs/docs/AWS?topicName=EC2" },
       // { title: "Elastic Beanstalk", url: "/blogs/docs/AWS?topicName=ElasticBeanstalk" },
       // { title: "Load Balancer", url: "/blogs/docs/AWS?topicName=LoadBalancer" },
