@@ -48,7 +48,7 @@ function Page() {
                         <p className="text-red-500">Failed to load markdown content.</p>
                     ) : markdownContent ? (
                         <div
-                            className="prose prose-lg min-w-full bg-white p-4 rounded-md shadow-sm"
+                            className="prose prose-lg min-w-full bg-white p-4 rounded-md shadow-sm overflow-hidden"
                         >
                             <ReactMarkdown remarkPlugins={[remarkGfm]}>{markdownContent}</ReactMarkdown>
                         </div>

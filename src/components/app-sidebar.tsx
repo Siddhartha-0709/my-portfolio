@@ -163,6 +163,7 @@ const menuItems = [
     icon: Home,
     submenu: [
       { title: "Access VPC using Terminal", url: "/blogs/docs/DevOps?topicName=access-vpc-using-terminal" },
+      { title: "Cronjobs and Crontab", url: "/blogs/docs/DevOps?topicName=Cronjobs and Crontab" },
       // { title: "EC2", url: "/blogs/docs/AWS?topicName=EC2" },
       // { title: "Elastic Beanstalk", url: "/blogs/docs/AWS?topicName=ElasticBeanstalk" },
       // { title: "Load Balancer", url: "/blogs/docs/AWS?topicName=LoadBalancer" },

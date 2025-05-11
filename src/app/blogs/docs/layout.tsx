@@ -5,7 +5,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <SidebarProvider>
       <ResponsiveSidebar />
-      <main className="pl-0 pt-10 md:pl-[380px] bg-white">  {/* Add left padding for desktop */}
+      <main className="pl-0 pt-10 md:pl-[390px] bg-white md:w-[1900px]">  {/* Add left padding for desktop */}
         <SidebarTrigger />
         {children}
       </main>

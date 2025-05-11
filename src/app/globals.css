@@ -149,6 +149,7 @@
 .prose p {
   margin-bottom: 1.25rem; /* Add space between paragraphs */
   color: #374151; /* Medium dark gray for paragraphs */
+  width: 80%;
 }
 
 /* Code Blocks */
@@ -169,6 +170,7 @@
   padding: 0.2rem 0.4rem;
   border-radius: 0.25rem;
   font-size: 0.9rem;
+  width: 60%;
 }
 
 /* Blockquotes */
@@ -215,7 +217,7 @@
 
 /* Tables */
 .prose table {
-  width: 100%;
+  width: 80%;
   border-collapse: collapse;
   margin-bottom: 1.5rem;
 }
@@ -243,6 +245,7 @@
   height: 1px;
   background-color: #e5e7eb;
   margin: 2rem 0;
+  width: 50%; /* Centered horizontal rule */
 }
 
 /* Images */
@@ -282,4 +285,8 @@
   font-size: 0.875rem;
   text-align: center;
   margin-top: 0.5rem;
+}
+
+.prose pre {
+  width: 80%; /* Make code blocks take full width of the container */
 }

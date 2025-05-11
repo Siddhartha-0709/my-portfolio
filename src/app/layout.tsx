@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import Head from 'next/head';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -17,26 +16,43 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Siddhartha Mukherjee",
-  description: "A passionate developer and tech enthusiast who loves turning ideas into impactful solutions. From designing seamless user experiences to deploying robust applications, I enjoy exploring the endless possibilities of technology.",
+  description: "A passionate developer and tech enthusiast...",
+  themeColor: "#000000",
+  openGraph: {
+    title: "Siddhartha Mukherjee - A passionate developer and Tech Enthusiast",
+    description: "Projects: VideoPod, Spaces, CompileX, and more.",
+    url: "https://siddhartha-dev.vercel.app",
+    siteName: "Siddhartha Mukherjee KPMG India TE-Oracle Analyst Intern Portfolio",
+    images: [
+      {
+        url: "/og-preview.png",
+        width: 1200,
+        height: 630,
+        alt: "Portfolio of Siddhartha Mukherjee",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="bg-black">
-      <Head>
-        <meta name="theme-color" content="#000000" /> 
-      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased dark bg-black w-[100%]`}
       >
-        {(typeof window !== 'undefined' && window.location.pathname !== "/blogs/docs") && <Navbar className="z-50" />}
+        <Navbar className="z-50" />
         {children}
       </body>
     </html>
   );
 }
-

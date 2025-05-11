@@ -15,7 +15,7 @@ export default function Navbar({ className }: { className?: string }) {
   const [showContact, setShowContact] = useState(false);
   const menuItems = [
     { href: "/", label: "Home" },
-    { href: "/blogs", label: "Blogs" },
+    { href: "/resume", label: "Resume" },
     { href: "https://www.youtube.com/@siddharthadotcom", label: "YouTube" },
     { href: "https://github.com/Siddhartha-0709", label: "GitHub" },
   ];
@@ -35,7 +35,7 @@ export default function Navbar({ className }: { className?: string }) {
     >
       <div className="">
         <Link href="/">
-          <TextGenerateEffect className="hidden md:block absolute left-[1%] top-10" words={'Siddhartha'} size="text-2xl font-bold" />
+          {/* <TextGenerateEffect className="hidden md:block absolute left-[1%] top-10" words={'Siddhartha'} size="text-2xl font-bold" /> */}
         </Link>
         <div className="hidden md:block absolute right-[2%] top-5"
         >
