@@ -15,7 +15,7 @@ export default function Navbar({ className }: { className?: string }) {
   const [showContact, setShowContact] = useState(false);
   const menuItems = [
     { href: "/", label: "Home" },
-    { href: "/resume", label: "Resume" },
+    { href: "https://drive.google.com/file/d/1zPHnd-Oj95PXRt0Phu0-kmoNFSxrra8W/view?usp=drive_link", label: "Resume" },
     { href: "https://www.youtube.com/@siddharthadotcom", label: "YouTube" },
     { href: "https://github.com/Siddhartha-0709", label: "GitHub" },
   ];
