@@ -39,7 +39,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     >
       <h1 className="text-4xl text-white relative z-20 text-center mb-2 font-bold mt-20">Life Changelog</h1>
       <h1 className="text-center text-xs md:text-xl text-slate-300 relative z-20">A comprehensive timeline of my learning and diverse experiences</h1>
-      <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
+      <div ref={ref} className="relative max-w-8xl mx-auto pb-20">
         {data.map((item, index) => (
           <motion.div
             initial={{ opacity: 0.0, y: 40 }}
@@ -52,7 +52,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
             <div
               key={index}
-              className="flex justify-start pt-10 md:pt-20 md:gap-10"
+              className="flex justify-start pt-10 md:pt-20 md:gap-5"
             >
               <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
                 <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center">

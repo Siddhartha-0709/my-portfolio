@@ -6,6 +6,28 @@ import { motion } from "framer-motion";
 export default function MyTimeLine() {
   const data = [
     {
+      title: "2025",
+      content: (
+        <div>
+          <p className="text-2xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-lime-400 to-green-600">
+            Enterprise Cloud, Infrastructure and Oracle Tech
+          </p>
+          <p className="text-lg flex gap-2 items-center text-neutral-700 dark:text-neutral-300">
+            ✅ Working at KPMG gaining experience Oracle Cloud Infrastructure
+          </p>
+          <p className="text-lg flex gap-2 items-center text-neutral-700 dark:text-neutral-300">
+            ✅ Explored Oracle database administration, with the DBA team
+          </p>
+          <p className="text-lg flex gap-2 items-center text-neutral-700 dark:text-neutral-300">
+            ✅ Learnt about cloud infrastructure, and enterprise deployments
+          </p>
+          <p className="text-lg flex gap-2 items-center text-neutral-700 dark:text-neutral-300">
+            ✅ Earned multiple Oracle Cloud Architect Certification
+          </p>
+        </div>
+      ),
+    },
+    {
       title: "2024",
       content: (
         <div>
@@ -56,9 +78,9 @@ export default function MyTimeLine() {
           <p className="text-2xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-lime-400 to-green-600">
             Internals of the Computer and Web Development
           </p>
-            <p className="text-lg flex gap-2 items-center text-neutral-700 dark:text-neutral-300">
+          <p className="text-lg flex gap-2 items-center text-neutral-700 dark:text-neutral-300">
             ✅ Explored Concepts of OS, DBMS and Computer Networks
-            </p>
+          </p>
           <p className="text-lg flex gap-2 items-center text-neutral-700 dark:text-neutral-300">
             ✅ Started my journey with React, Tailwind and Bootstrap
           </p>
